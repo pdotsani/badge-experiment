@@ -1,0 +1,19 @@
+.BadgeWithMeter {
+  width: 112.58px;
+  height: 130px;
+}
+
+.BadgeWithMeter_percentile {
+  position: relative;
+  bottom: 118px;
+  right: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.BadgeWithMeter_label {
+  position: relative;
+  bottom: 120px;
+  color: white;
+}
