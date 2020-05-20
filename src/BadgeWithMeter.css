@@ -17,3 +17,22 @@
   bottom: 120px;
   color: white;
 }
+
+.SmScoreWithMeter {
+  width: 51.96px;
+  height: 60px;
+}
+
+.SmScoreWithMeter_score {
+  color: black;
+  position: relative;
+  bottom: 132px;
+  font-weight: bold;
+}
+
+.RPMMeter_meter {
+  height: 8px;
+  width: 400px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #16a085 , #27ae60, #f1c40f, #e67e22, #e74c3c);
+}

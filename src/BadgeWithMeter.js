@@ -7,13 +7,21 @@ import {suffix, writtenPctl, pctlOrScore} from './helper.js'
 
 class BadgeWithMeter extends React.Component {
   render() {
-    const { pctl, type } = this.props;
+    const { pctl, type, score, high, low} = this.props;
     return(
       <div className="BadgeWithMeter">
-        <Badge pctl={pctl}/>
+        <Badge 
+          pctl={pctl} 
+          score={score} 
+          type={type}
+          high={high}
+          low={low}
+          />
         <div className="BadgeWithMeter_percentile">
-          {writtenPctl(pctl)}
-          <span className="BadgeWithMeter_percentile_sufix">{suffix(pctl)}</span>
+          {type === 'pctl' ? writtenPctl(pctl) : score}
+          <span className="BadgeWithMeter_percentile_sufix">
+            {type === 'pctl' ? suffix(pctl) : ""}
+          </span>
         </div>
         <div className="BadgeWithMeter_label">
           {pctlOrScore(type)}
