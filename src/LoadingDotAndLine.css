@@ -1,0 +1,83 @@
+@keyframes showFirstCircle {
+  0% {
+    fill: black;
+    opacity: 0;
+  }
+
+  25% {
+    fill: black;
+    opacity: 1;
+  }
+
+  100% {
+    fill: black;
+    opacity: 1;
+  }
+}
+
+@keyframes showCircleTwo {
+  0% {
+    fill: black;
+    opacity: 0;
+  }
+
+  50% {
+    fill: black;
+    opacity: 1;
+  }
+
+  100% {
+    fill: black;
+    opacity: 1;
+  }
+}
+
+@keyframes showCircleThree {
+  0% {
+    fill: black;
+    opacity: 0;
+  }
+
+  75% {
+    fill: black;
+    opacity: 1;
+  }
+
+  100% {
+    fill: black;
+    opacity: 1;
+  }
+}
+
+@keyframes showRectFinal {
+  0% {
+    stroke: #cccccc;
+    stroke-width: 0.264583;
+  }
+
+  85% {
+    stroke: red;
+    stroke-width: 1;
+  }
+
+  100% {
+    stroke: red;
+    stroke-width: 1;
+  }
+}
+
+#loading-circle-1 {
+  animation: showFirstCircle 10s ease-in infinite;
+}
+
+#loading-circle-2 {
+  animation: showCircleTwo 10s ease-in infinite;
+}
+
+#loading-circle-3 {
+  animation: showCircleThree 10s ease-in infinite;
+}
+
+#loading-square-1 {
+  animation: showRectFinal 10s ease-in infinite;
+}
