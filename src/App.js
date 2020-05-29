@@ -6,11 +6,21 @@ import BadgeWithMeter from "./BadgeWithMeter.js";
 import SmScoreWithMeter from "./SmScoreWithMeter.js";
 import RPMMeter from "./RPMMeter.js";
 import LoadingDotAndLine from "./LoadingDotAndLine.js";
+import BadgeCir from "./BadgeCir.js";
+import BadgeCirSm from "./BadgeCirSm.js";
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <BadgeCir pct={22} />
+        <BadgeCir pct={45} />
+        <BadgeCir pct={71} />
+        <BadgeCir pct={90} />
+        <BadgeCirSm pct={22} />
+        <BadgeCirSm pct={45} />
+        <BadgeCirSm pct={71} />
+        <BadgeCirSm pct={90} />
         <BadgeWithMeter pctl={0.89} type={"pctl"} />
         <BadgeWithMeter pctl={0.32} type={"pctl"} />
         <BadgeWithMeter pctl={0.65} type={"pctl"} />
